@@ -58,7 +58,9 @@ public class MainActivity extends Activity {
         navegador = (WebView) findViewById(R.id.webkit);
         navegador.getSettings().setJavaScriptEnabled(true);
         navegador.getSettings().setBuiltInZoomControls(false);
-        navegador.loadUrl("https://192.168.0.143:8449/pfs/login.jsp");
+        //navegador.loadUrl("https://localhost:8449/pfs/login.jsp");
+        //navegador.loadUrl("https://192.168.0.143:8449/pfs/login.jsp");
+        navegador.loadUrl("https://recovery.pfsgroup.es:8449/pfs/login.jsp");
         navegador.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
